@@ -4,8 +4,7 @@
 using namespace std;
 int main ()
 {
-    int a;
-    int b;
+    int a,b;
     int j;
     int d;
     int s;
@@ -70,5 +69,7 @@ int main ()
     }
 
 }
+
+
 
 
