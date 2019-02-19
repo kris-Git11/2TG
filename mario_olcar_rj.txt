@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+	int a, b, s, d, j;
+	cout << "Upisi prvi broj"; cin >> a;
+	cout << "Upisi drugi broj"; cin >> b;
+	
+	if (a < 100 || b < 100)
+	{
+		cout << "neispravan unos";
+	}
+	
+	else if (a <= b)
+	{
+		for (int i = a; i <= b; i++)
+		{
+			s = i / 100;
+			d = i % 100 / 10;
+			j = i % 10;
+			
+			if (s + j == d)
+			{
+				cout << "*" << i << "*";
+			}
+			else cout << i << " ";
+			if (i % 10 == 0)
+			{
+				cout << "\n";
+			}
+
+		}
+	}
+	else if (b <= a)
+	{
+		for (int i = b; i <= a; i++)
+		{
+			s = i / 100;
+			d = i % 100 / 10;
+			j = i % 10;
+
+			if (s + j == d)
+			{
+				cout << "*" << i << "*";
+			}
+			else cout << i << " ";
+			if (i % 10 == 0)
+			{
+				cout << "\n";
+			}
+
+		}
+	}
+	
+    return 0;
+}
