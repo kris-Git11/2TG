@@ -40,5 +40,18 @@ int main()
 				cout << i << " ";
 				y++;
 			}
-		
+		}
+	}
+	if (x == 'e')
+	{
+		for (int i = 2; i<max(a, b); i++)
+		{
+			if (a%i == 0 && b%i == 0)
+			{
+				cout << i;
+				return 0;
+			}
+		}
+		cout << a * b;
+	}
 
