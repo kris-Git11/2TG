@@ -37,7 +37,7 @@ int main()
                     o==0;
                     for(int i=a; i<=b; i++)
                         {
-                            o++;
+                            o=o+1;
                             if(i%2==1)
                                 {
                                     cout<<i<<" ";
@@ -51,6 +51,7 @@ int main()
                                 cout<<endl;
                                 o==0;
                                 }
+                            else {}
                         }
                 }
                 else
@@ -58,7 +59,7 @@ int main()
                     o==0;
                     for(int i=b; i<=a; i++)
                         {
-                            o++;
+                            o=o+1;
                             if(i%2==1)
                                 {
                                     cout<<i<<" ";
@@ -72,6 +73,7 @@ int main()
                                     cout<<endl;
                                     o==0;
                                 }
+                            else {}
                         }
                 }
                 break;
