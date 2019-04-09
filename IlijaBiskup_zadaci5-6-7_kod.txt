@@ -1,0 +1,33 @@
+#include "stdafx.h"
+#include <math.h>
+#include <iostream>
+using namespace std;
+
+//ZADATAK 1-----------------------------------------------------------------------
+char ap(int a) {
+	char x;
+	if (a >= 12 && a<24) { return x = 'P'; }
+	else return x = 'A';
+}
+
+int main()
+{
+	int h, min;
+	cin >> h >> min;
+	cout << h << ':' << min << " " << ap(h) << 'M' << endl;
+	return 0;
+}
+
+// ZADATAK 2----------------------------------------------------------------------------
+int sek(int sec1, int sec2) {
+	if (sec1 < sec2) { return (sec2 - sec1);}
+	else return (86400 - sec1 + sec2);
+}
+
+int main() {
+	int h1, min1, h2, min2, sek1, sek2;
+	cin >> h1 >> min1 >> h2 >> min2;
+	sek1 = h1 * 3600 + min1 * 60;
+	sek2 = h2 * 3600 + min2 * 60;
+	cout << sek(sek1, sek2) << endl;
+}
