@@ -12,7 +12,7 @@ int razlika(int h1, int m1, int s1, int h2, int m2, int s2, int sek1, int sek2)
         return (sek2-sek1);
     }else
     {
-        return ((24*60*60)-sek2);
+        return ((24*60*60)- sek1 + sek2);
     }
 }
 
